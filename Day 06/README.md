@@ -24,3 +24,6 @@ we can pass callback func which is compare function
 (a,b)=>b-a ---descending
 
 foreach((e)=>{}) --->foreach iterates array
+
+slice()--->returns sub of array
+splice(stsrt,delcount,addingElem)--->returns deleted elemnts and modify the original array
