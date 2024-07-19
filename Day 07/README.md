@@ -1,20 +1,47 @@
-#day 7 in js challenge
-*objects*
+## Day 7 in JS Challenge
 
-creation object using literal style and using constructor
-functions or also treated as objec here
+### Objects
 
-Object.keys()--return keys
-Object.values()--return values
-Object.entries()--returns  an array of each key,values pair as single array in it
-Object.freeze()---avoids modification od properties of object
-Object.defineproperty()---we can add an property as an object into a ddefined object
+- **Creation of Objects**
+  - **Using Object Literal Syntax**
+    ```javascript
+    const obj = {
+      key1: value1,
+      key2: value2
+    };
+    ```
 
-*this---keyword*
-this keyword refers to current obj
+  - **Using Constructor**
+    ```javascript
+    const obj = new Object();
+    obj.key1 = value1;
+    obj.key2 = value2;
+    ```
 
-when we define an nested func in object when we call it outer func refers to curr obj
-but inner func refer to global obj or strict mode it will return undefined
-becoz outer function is called on obj so uter func refers to curr obj
+- **Object Methods**
+  - `Object.keys(obj)` - Returns an array of the object's own enumerable property names (keys).
+  - `Object.values(obj)` - Returns an array of the object's own enumerable property values.
+  - `Object.entries(obj)` - Returns an array of the object's own enumerable property `[key, value]` pairs.
+  - `Object.freeze(obj)` - Prevents modification of properties of the object (makes it immutable).
+  - `Object.defineProperty(obj, property, descriptor)` - Adds or modifies a property on the object.
 
-arrow functions do not have acess to this keyword
+### The `this` Keyword
+
+- **Definition**
+  - The `this` keyword refers to the current object in context.
+
+- **Behavior in Nested Functions**
+  - In a nested function within an object method, `this` in the outer function refers to the object, while `this` in the inner function refers to the global object (or `undefined` in strict mode).
+
+  ```javascript
+  const obj = {
+    outer: function() {
+      console.log(this); // Refers to obj
+      function inner() {
+        console.log(this); // Refers to global object or undefined in strict mode
+      }
+      inner();
+    }
+  };
+
+  obj.outer();

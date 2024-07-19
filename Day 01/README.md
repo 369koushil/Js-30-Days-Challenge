@@ -1,26 +1,29 @@
-#Day 01 in JS Challenge
-Today learned about variable declration (var,let,const) 
-next learned about datatypes like Number,bigint,string,boolean,object,array and typeof operator
+## Day 01 in JS Challenge
 
-*var*--->function/global scope
-*let const*--->local scope
+### Topics Covered
 
-**primitive datatypes
-Number
-BigInt
-null
-undefined
-Symbol
-String
-Boolean
+- **Variable Declaration**
+  - `var` - Function/global scope
+  - `let` and `const` - Block scope
 
-**refernce data types
-objects
-Array
-set
-Map
-weak Map
-weak set
+- **Data Types**
+  - **Primitive Data Types**
+    - `Number`
+    - `BigInt`
+    - `String`
+    - `Boolean`
+    - `null`
+    - `undefined`
+    - `Symbol`
+  
+  - **Reference Data Types**
+    - `Object`
+    - `Array`
+    - `Set`
+    - `Map`
+    - `WeakMap`
+    - `WeakSet`
 
-*arrays set map are special obj becoz their indexes act as keys*
+### Additional Notes
 
+- Arrays, Sets, and Maps are special objects because their indexes act as keys.
