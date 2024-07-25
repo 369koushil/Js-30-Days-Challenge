@@ -1,3 +1,5 @@
+# Define the content for the markdown file
+markdown_content = """
 # Day 10: Event Handling
 
 ## Topics Learned
@@ -17,9 +19,10 @@
 - **Preventing Default Form Submission**:
   - Using `event.preventDefault()` to stop the form from performing its default action (submitting data and reloading the page).
 
+### MutationObserver API
+- Allows watching for changes in the DOM tree, such as attribute changes, text content changes, and structural changes (like adding or removing child nodes).
+
 ### Summary
 - Event handling involves responding to user interactions and other events.
 - `keydown` and `keyup` events are used to detect and respond to keyboard interactions.
-- Event delegation simplifies handling events for dynamically added or numerous child elements by attaching a single event listener to a parent.
-- Preventing default form submission allows for custom handling of form data without refreshing the page.
-
+- Event delegation simplifies handling events for dynamically added
