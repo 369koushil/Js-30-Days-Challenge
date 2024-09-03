@@ -50,7 +50,7 @@ const ep={
     print(){
         console.log(this.ename,this.eage)
     },
-    [propname]:12
+    [propname]:12000
 
 }
 console.log(ep)

@@ -7,7 +7,7 @@ const book = {
     this.Price = `$${p}`;
     this.POY = y;
   },
-  details: function () {
+  details: function(){
     for (let i in this) {
       console.log(this[i]);
     }

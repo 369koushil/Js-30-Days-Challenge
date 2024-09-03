@@ -1,8 +1,10 @@
 # Day 08: ES6+ Features
 
 ## Rest and Spread Operators
+- synatax is same for Rest and Spread operator but each have different puroses
 
 ### Spread Operator
+- it is used for unpacking elements of array or object.
 - Used over iterable objects like arrays and objects.
 - Commonly used to copy an array or object.
 
