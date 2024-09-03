@@ -71,3 +71,9 @@ function show(){
 
 window['show']()
 
+
+const obj={
+    name:'kkr',
+    age:12
+}
+console.log(obj['name']);

@@ -48,10 +48,10 @@ const nested=(sum,mul)=>{
 console.log(nested(sum,mul))
 
 function exception(){
-    throw new Error('param required')
+    throw new Error('param required');
 }
 
-greet('sandeep')
+greet()
 
 
 

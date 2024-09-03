@@ -1,7 +1,7 @@
 
 const day=(key)=>{
 
-    switch(true){
+    switch(key){
         case(key===1):console.log('sunday')
         break;
         case (key===2):console.log('Tuesday')
@@ -15,14 +15,14 @@ const day=(key)=>{
         case( key===6):console.log('saturday')
         break;
         default:console.log('sunday')
-        break;
+        
     }
 }
 
 day(99)
 
 const grade = (m) => {
-    switch (true) {
+    switch (m) {
         case (m >= 90):
             console.log('A');
             break;
