@@ -29,6 +29,10 @@ class ApiKeyError extends Error {
   }
   
   promise1()
-    .then(r => console.log(r))
-    .catch(err => console.log(err));
+    .then(r => console.log(r)).catch(
+      err=>console.error(err)
+    )
+
+
   
+    

@@ -72,16 +72,18 @@ const listModule = (function () {
   }
 
   return {
-    add: additem,
-    del: del,
-    listitems: listitems,
+    additem,
+    del,
+    listitems,
   };
 })();
 
-listModule.add("shampoo");
-listModule.add("laser");
-listModule.add("eraser");
-listModule.listitems();
+const{additem,del,listitems}=listModule;
+
+additem("shampoo");
+additem("laser");
+additem("eraser");
+listitems();
 
 function factorial(n) {
   let a = n;
@@ -102,3 +104,14 @@ function factorial(n) {
 }
 
 factorial(3);
+
+
+
+(
+  function(){
+    return function(){
+      console.log("hi")
+    }
+  }
+)()();
+

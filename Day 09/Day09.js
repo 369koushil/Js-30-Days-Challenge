@@ -8,7 +8,8 @@ element1.innerText='mdjfnijifninfsnfjnfnrifi'
 function li(cls,pcls,no){
  while(no>0){
     const parent=document.querySelector(pcls);
-    const child=document.createElement('li','cls');
+    const child=document.createElement('li');
+    child.className=cls;
     parent.append(child);
     no-=1
  }
@@ -27,3 +28,5 @@ else{
         body.style.backgroundColor='red'
 }
 })
+
+

@@ -1,5 +1,4 @@
-# Define the content for the markdown file
-markdown_content = """
+
 # Day 10: Event Handling
 
 ## Topics Learned
